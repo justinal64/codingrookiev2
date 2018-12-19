@@ -35,6 +35,7 @@ const Navigation: React.SFC<NavigationRootProps> = ({ className, title }) => (
       <StyledNavigationLi>{title}</StyledNavigationLi>
     </StyledNavigationLogo>
     <StyledNavigationDiv>
+      {/* refactor to forEach or map? */}
       <StyledNavigationLi>Tutorials</StyledNavigationLi>
       <StyledNavigationLi>Blog</StyledNavigationLi>
       <StyledNavigationLi>Store</StyledNavigationLi>
