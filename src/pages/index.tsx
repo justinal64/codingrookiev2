@@ -18,7 +18,6 @@ const IndexPage = () => (
         </p>
         <button>Start Learning Now!</button>
       </Container>
-      <p>Test</p>
       <Card />
     </Page>
   </IndexLayout>
