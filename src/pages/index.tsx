@@ -19,6 +19,17 @@ const IndexPage = () => (
         <button>Start Learning Now!</button>
       </Container>
       <Card />
+      <h1>Become a Pro</h1>
+      <p>
+        Take your skills to the next level with Level Up Pro. With over 120 exclusive videos and a new exclusive series each month, you'll
+        become a pro in no time. Pay by month or by year and receive extra content and features to supercharge your learning experience.
+      </p>
+      <button>Learn More!</button>
+      <h1>New to Coding Rookie</h1>
+      <p>Level 1 Typescript</p>
+      <p>Learn the basics of TypeScript from the ground up</p>
+      <p>Img Here</p>
+      <button>Buy More!</button>
     </Page>
   </IndexLayout>
 )

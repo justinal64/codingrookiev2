@@ -11,6 +11,7 @@ const CardContainer = styled.div`
 const StyledCard = styled.div`
   padding: 2em 5em;
   background-color: lightgray;
+  margin: 1em;
 `
 
 interface NavigationRootProps {
@@ -24,12 +25,6 @@ const src: string =
 // { className, title }
 const Card: React.SFC<NavigationRootProps> = () => (
   <CardContainer>
-    <StyledCard>
-      <img src={src} />
-    </StyledCard>
-    <StyledCard>
-      <img src={src} />
-    </StyledCard>
     <StyledCard>
       <img src={src} />
     </StyledCard>
