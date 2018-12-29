@@ -8,7 +8,7 @@ import { sizes } from '../types'
 
 const StyledHeader = styled.header`
   height: ${heights.header}px;
-  padding: 0 ${dimensions.containerPadding}rem;
+  /* padding: 0 ${dimensions.containerPadding}rem; */
   background-color: ${colors.transparent};
 `
 
