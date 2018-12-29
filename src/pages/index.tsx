@@ -5,12 +5,18 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Card from '../components/Card/Card'
+import { Header } from '../components/Header/Header'
 
 const IndexPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <h1>Become a better web developer</h1>
+        <Header title="h1" size="ginormous" />
+        <Header title="h2" size="xlarge" />
+        <Header title="h3" size="large" />
+        <Header title="h4" size="medium" />
+        <Header title="h5" size="small" />
+        <Header title="h6" size="xsmall" />
         <p>Focused & high quality video tutorials for web developers and designers</p>
         <p>
           Join over 206,615 developers & designers learning with our catalogue of 1000+ free video tutorials for beginners, intermediate and
