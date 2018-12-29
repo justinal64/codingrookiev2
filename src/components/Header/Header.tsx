@@ -1,17 +1,15 @@
 import * as React from 'react'
 import styled from 'react-emotion'
-import { transparentize } from 'polished'
 import { Link } from 'gatsby'
 
-import { heights, dimensions, colors } from '../../styles/variables'
+import { heights, dimensions, colors, Size } from '../../styles/variables'
 import Container from '../Container'
-import { sizes, Size } from '../types'
+import { sizes } from '../types'
 
 const StyledHeader = styled.header`
   height: ${heights.header}px;
   padding: 0 ${dimensions.containerPadding}rem;
-  background-color: ${colors.brand};
-  color: ${transparentize(0.5, colors.white)};
+  background-color: ${colors.transparent};
 `
 
 const HeaderInner = styled(Container)`
@@ -22,7 +20,7 @@ const HeaderInner = styled(Container)`
 `
 
 const HomepageLink = styled(Link)<HeaderProps>`
-  color: ${colors.white};
+  color: ${colors.lightblue};
   font-size: ${props => (props.size ? Size[props.size] : 1)};
   font-weight: 600;
 
@@ -34,7 +32,7 @@ const HomepageLink = styled(Link)<HeaderProps>`
 
 interface HeaderProps {
   title: string
-  size: sizes
+  size?: sizes
 }
 
 const Header: React.SFC<HeaderProps> = ({ title, size }) => (

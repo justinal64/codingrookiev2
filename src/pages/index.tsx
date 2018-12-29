@@ -11,12 +11,7 @@ const IndexPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <Header title="h1" size="ginormous" />
-        <Header title="h2" size="xlarge" />
-        <Header title="h3" size="large" />
-        <Header title="h4" size="medium" />
-        <Header title="h5" size="small" />
-        <Header title="h6" size="xsmall" />
+        <Header title="Become a better web developer" size="ginormous" />
         <p>Focused & high quality video tutorials for web developers and designers</p>
         <p>
           Join over 206,615 developers & designers learning with our catalogue of 1000+ free video tutorials for beginners, intermediate and
@@ -25,13 +20,13 @@ const IndexPage = () => (
         <button>Start Learning Now!</button>
       </Container>
       <Card />
-      <h1>Become a Pro</h1>
+      <Header title="Become a Pro size" size="ginormous" />
       <p>
         Take your skills to the next level with Level Up Pro. With over 120 exclusive videos and a new exclusive series each month, you'll
         become a pro in no time. Pay by month or by year and receive extra content and features to supercharge your learning experience.
       </p>
       <button>Learn More!</button>
-      <h1>New to Coding Rookie</h1>
+      <Header title="New to Coding Rookie" size="ginormous" />
       <p>Level 1 Typescript</p>
       <p>Learn the basics of TypeScript from the ground up</p>
       <p>Img Here</p>

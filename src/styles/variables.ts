@@ -18,7 +18,9 @@ export const colors = {
     calm: 'rgba(0, 0, 0, 0.54)'
   },
   white: '#fff',
-  black: '#000'
+  black: '#000',
+  lightblue: 'rgb(130, 216, 216)',
+  transparent: 'transparent'
 }
 
 export const fonts = {
@@ -62,4 +64,19 @@ export const dimensions = {
 
 export const heights = {
   header: 60
+}
+
+export const Size = {
+  xsmall: '.75em', // h6
+  small: '.83em', // h5
+  medium: '1.12em', // h4
+  large: '1.17em', // h3
+  xlarge: '1.5em', // h2
+  ginormous: '2.0em' // h1
+}
+
+export const ui = {
+  header: {
+    lightblue: '82D891'
+  }
 }
