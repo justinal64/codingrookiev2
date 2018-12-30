@@ -7,6 +7,7 @@ export const colors = {
   success: '#37b635',
   warning: '#ec1818',
   ui: {
+    primary: '#e37222',
     bright: '#e0d6eb',
     light: '#f5f3f7',
     whisper: '#fbfafc'
@@ -18,7 +19,9 @@ export const colors = {
     calm: 'rgba(0, 0, 0, 0.54)'
   },
   white: '#fff',
-  black: '#000'
+  black: '#000',
+  aqua: '#008B95',
+  transparent: 'transparent'
 }
 
 export const fonts = {
@@ -62,4 +65,19 @@ export const dimensions = {
 
 export const heights = {
   header: 60
+}
+
+export const Size = {
+  xsmall: '.75em', // h6
+  small: '.83em', // h5
+  medium: '1.12em', // h4
+  large: '1.17em', // h3
+  xlarge: '1.5em', // h2
+  ginormous: '2.0em' // h1
+}
+
+export const ui = {
+  header: {
+    aqua: '#008B95'
+  }
 }

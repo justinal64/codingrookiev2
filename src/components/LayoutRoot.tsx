@@ -3,7 +3,7 @@ import styled from 'react-emotion'
 
 const StyledLayoutRoot = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
 `
 

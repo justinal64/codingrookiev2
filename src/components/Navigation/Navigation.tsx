@@ -1,27 +1,20 @@
 import * as React from 'react'
 import styled from 'react-emotion'
+import { colors } from '../../styles/variables'
+import { Link } from 'gatsby'
 
 const StyledNavigation = styled.div`
   display: flex;
-  /* min-height: 10vh; */
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-`
-const StyledNavigationLogo = styled.div`
-  display: flex;
-`
-
-const StyledNavigationDiv = styled.div`
-  display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  background-color: ${colors.ui.primary};
+  color: white;
+  padding: 1em;
 `
 
 const StyledNavigationLi = styled.li`
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   padding: 1em;
+  color: white;
 `
 
 interface NavigationRootProps {
@@ -31,17 +24,25 @@ interface NavigationRootProps {
 
 const Navigation: React.SFC<NavigationRootProps> = ({ className, title }) => (
   <StyledNavigation className={className}>
-    <StyledNavigationLogo>
-      <StyledNavigationLi>{title}</StyledNavigationLi>
-    </StyledNavigationLogo>
-    <StyledNavigationDiv>
-      {/* refactor to forEach or map? */}
-      <StyledNavigationLi>Tutorials</StyledNavigationLi>
-      <StyledNavigationLi>Blog</StyledNavigationLi>
-      <StyledNavigationLi>Store</StyledNavigationLi>
-      <StyledNavigationLi>Login</StyledNavigationLi>
-      <StyledNavigationLi>Sign Up</StyledNavigationLi>
-    </StyledNavigationDiv>
+    <StyledNavigationLi>
+      <Link to="/">{title}</Link>
+    </StyledNavigationLi>
+    {/* refactor to forEach or map? */}
+    <StyledNavigationLi>
+      <Link to="/tutorials">Tutorials</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/blog">Blog</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/store">Store</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/login">Login</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/signup">Sign up</Link>
+    </StyledNavigationLi>
   </StyledNavigation>
 )
 
