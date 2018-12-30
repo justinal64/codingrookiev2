@@ -20,7 +20,7 @@ const HeaderInner = styled(Container)`
 `
 
 const HomepageLink = styled(Link)<HeaderProps>`
-  color: ${colors.lightblue};
+  color: ${colors.aqua};
   font-size: ${props => (props.size ? Size[props.size] : 1)};
   font-weight: 600;
 

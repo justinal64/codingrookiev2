@@ -1,17 +1,20 @@
 import * as React from 'react'
 import styled from 'react-emotion'
+import { colors } from '../../styles/variables'
+import { Link } from 'gatsby'
 
 const StyledNavigation = styled.div`
   display: flex;
   flex-direction: column;
-  /* min-height: 10vh; */
-  background-color: pink;
-  /* justify-content: space-between; */
+  background-color: ${colors.ui.primary};
+  color: white;
+  padding: 1em;
 `
 
 const StyledNavigationLi = styled.li`
   display: flex;
   padding: 1em;
+  color: white;
 `
 
 interface NavigationRootProps {
@@ -21,13 +24,25 @@ interface NavigationRootProps {
 
 const Navigation: React.SFC<NavigationRootProps> = ({ className, title }) => (
   <StyledNavigation className={className}>
-    <StyledNavigationLi>{title} Logo Here!!</StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/">{title}</Link>
+    </StyledNavigationLi>
     {/* refactor to forEach or map? */}
-    <StyledNavigationLi>Tutorials</StyledNavigationLi>
-    <StyledNavigationLi>Blog</StyledNavigationLi>
-    <StyledNavigationLi>Store</StyledNavigationLi>
-    <StyledNavigationLi>Login</StyledNavigationLi>
-    <StyledNavigationLi>Sign Up</StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/tutorials">Tutorials</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/blog">Blog</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/store">Store</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/login">Login</Link>
+    </StyledNavigationLi>
+    <StyledNavigationLi>
+      <Link to="/signup">Sign up</Link>
+    </StyledNavigationLi>
   </StyledNavigation>
 )
 

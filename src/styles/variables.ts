@@ -7,6 +7,7 @@ export const colors = {
   success: '#37b635',
   warning: '#ec1818',
   ui: {
+    primary: '#e37222',
     bright: '#e0d6eb',
     light: '#f5f3f7',
     whisper: '#fbfafc'
@@ -19,7 +20,7 @@ export const colors = {
   },
   white: '#fff',
   black: '#000',
-  lightblue: 'rgb(130, 216, 216)',
+  aqua: '#008B95',
   transparent: 'transparent'
 }
 
@@ -77,6 +78,6 @@ export const Size = {
 
 export const ui = {
   header: {
-    lightblue: '82D891'
+    aqua: '#008B95'
   }
 }
