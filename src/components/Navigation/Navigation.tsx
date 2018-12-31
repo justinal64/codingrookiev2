@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 const StyledNavigation = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${colors.ui.primary};
+  background-color: ${colors.gray.calm};
   color: white;
   padding: 1em;
 `

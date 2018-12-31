@@ -7,6 +7,7 @@ import IndexLayout from '../layouts'
 import Card from '../components/Card/Card'
 import { Header } from '../components/Header/Header'
 import styled from 'react-emotion'
+import Button from '../components/Button/Button'
 
 // this will need to be a local image
 // and should probably have less words
@@ -34,7 +35,7 @@ const IndexPage = () => (
             I am a full stack developer from Nashville TN. When I'm not learning something new you will find me spending time with my
             family.
           </P>
-          <button>Start Learning Now!</button>
+          <Button title="Test">Start Learning Now!</Button>
         </Div>
       </Container>
       <Card />
