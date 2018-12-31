@@ -14,23 +14,28 @@ const Div = styled.div`
   max-width: 100%;
   height: 100vh;
   background-color: blue;
-  background-image: url('https://i.pinimg.com/originals/b9/d6/42/b9d642ea59ce1b544d6b20804bdde581.jpg');
+  background-image: url('https://raw.githubusercontent.com/justinal64/react-portfolio-website/master/src/static/img/pacmanbgburned.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+`
+
+const P = styled.p`
+  color: white;
 `
 
 const IndexPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <Div />
-        <Header title="Welcome to my website" size="ginormous" />
-        <p>
-          I am a full stack developer from Nashville TN. When I'm not learning something new you will find me spending time with my family.
-        </p>
-        <button>Start Learning Now!</button>
+        <Div>
+          <Header title="Welcome to my website" size="ginormous" />
+          <P>
+            I am a full stack developer from Nashville TN. When I'm not learning something new you will find me spending time with my
+            family.
+          </P>
+          <button>Start Learning Now!</button>
+        </Div>
       </Container>
       <Card />
     </Page>
